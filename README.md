@@ -88,13 +88,17 @@ URL Mapping
 
     __Equivalent AWS Lambda Proxy for HERE Geocoder API:__
 
-    API Gateway URL format: `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/{type}/{resourcePath+}`
+    API Gateway URL format:
+    
+    `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/{type}/{resourcePath+}`
 
     {type}: `geocoder`
 
     {resourcePath+}: `6.2/geocode.json?searchtext=200 S Mathilda Sunnyvale CA`
 
-    API Gateway URL: `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/geocoder/6.2/geocode.json?searchtext=200 S Mathilda Sunnyvale CA`
+    API Gateway URL:
+    
+    `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/geocoder/6.2/geocode.json?searchtext=200 S Mathilda Sunnyvale CA`
 
 * An example of an HTTP GET request to HERE GeoCode AutoComplete API & equivalent AWS Lambda Proxy:
 
@@ -106,13 +110,17 @@ URL Mapping
 
     __Equivalent AWS Lambda Proxy for HERE GeoCode AutoComplete API:__
 
-    API Gateway URL format: `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/{type}/{resourcePath+}`
+    API Gateway URL format:
+    
+    `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/{type}/{resourcePath+}`
 
     {type}: `autocomplete.geocoder`
 
     {resourcePath+}: `6.2/suggest.json?query={query}`
 
-    API Gateway URL: `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/autocomplete.geocoder/6.2/suggest.json?query={query}`
+    API Gateway URL:
+    
+    `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/autocomplete.geocoder/6.2/suggest.json?query={query}`
 
 * An example of an HTTP GET request to HERE Reverse Geocoder API & equivalent AWS Lambda Proxy:
 
@@ -124,13 +132,17 @@ URL Mapping
 
     __Equivalent AWS Lambda Proxy for HERE Reverse Geocoder API:__
 
-    API Gateway URL format: `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/{type}/{resourcePath+}`
+    API Gateway URL format:
+    
+    `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/{type}/{resourcePath+}`
 
     {type}: `reverse.geocoder`
 
     {resourcePath+}: `6.2/reversegeocode.json?prox=41.8842,-87.6388,250&mode=retrieveAddresses&maxresults=1&gen=9`
 
-    API Gateway URL: `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/reverse.geocoder/6.2/reversegeocode.json?prox=41.8842,-87.6388,250&mode=retrieveAddresses&maxresults=1&gen=9`
+    API Gateway URL:
+    
+    `https://<apigw>.execute-api.<region>.amazonaws.com/Prod/geocode/api/reverse.geocoder/6.2/reversegeocode.json?prox=41.8842,-87.6388,250&mode=retrieveAddresses&maxresults=1&gen=9`
 
 The AWS Lambda Proxy URL depends on the base URL type. For example:
 
